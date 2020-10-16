@@ -7,7 +7,8 @@
 # git
 * setup\
 `git init`\
-`git remote add origin git@github.com:tb-net/newproject.git`
+`git remote add origin git@github.com:tb-net/newproject.git`\
+`ssh -T git@github.com`
 * usage\
 `git add myfile`\
 `git commit -m "mycomment"`\
