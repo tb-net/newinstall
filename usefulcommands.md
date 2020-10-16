@@ -1,8 +1,12 @@
 # ssh
-* keycreation\
+* key creation\
 `ssh-keygen -t rsa -b 4096 -C comment_here`
 * launch\
 `eval $(ssh-agent)` or `ssh-agent /bin/sh` (manjaro)
+* list\
+`ssh-add -l`
+* remove\
+`ssd-add -d /pathtoprivate'
 
 # git
 * setup\
