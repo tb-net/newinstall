@@ -6,7 +6,9 @@
 * list\
 `ssh-add -l`
 * remove\
-`ssd-add -d /pathtoprivate'
+`ssd-add -d /pathtoprivate`
+* transfer\
+ssh-copy-id -i /pathtoprivate user@host
 
 # git
 * setup\
