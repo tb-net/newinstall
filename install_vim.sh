@@ -5,7 +5,7 @@ apt remove -y vim-tiny
 apt install -y vim
 
 dir=$(pwd)
-\cp .vim ~
+\cp -r .vim ~
 \cp .viminfo ~
 \cp .vimrc ~
 
