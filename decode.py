@@ -1,5 +1,5 @@
 # github.com/tb-net
-# decode uploaded scripts
+# Encode uploaded scripts
 
 import os
 from cryptography.fernet import Fernet
