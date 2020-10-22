@@ -5,10 +5,10 @@ apt remove -y vim-tiny
 apt install -y vim
 rm -f .vim
 
-dir=$(pwd)
-echo $dir
-#\cp ~/scripts/newinstall/vim/.viminfo ~/.viminfo
-\cp ~/scripts/newinstall/vim/.vimrc ~/.vimrc
-curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+home=/home/$USER
+dir=$home/scripts/newinstall
+#\cp $dir/vim/.viminfo ~/.viminfo
+\cp $dir/vim/.vimrc ~/.vimrc
+curl -fLo $home/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
 
