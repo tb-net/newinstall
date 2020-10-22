@@ -7,9 +7,9 @@ mkdir ~/.bak
 [ -f ~/.bash_aliases ] && mv ~/.bash_aliases ~/.bak/.bash_aliases.bak
 [ -f ~/.inputrc ] && mv ~/.inputrc .bak/.inputrc.bak
 
-cp /scripts/newinstall/bash/.bashrc ~/.bashrc
-cp /scripts/newinstall/bash/.bash_aliases ~/.bash_aliases
-cp /scripts/newinstall/bash/.inputrc ~/.inputrc
+cp ~/scripts/newinstall/bash/.bashrc ~/.bashrc
+cp ~/scripts/newinstall/bash/.bash_aliases ~/.bash_aliases
+cp ~/scripts/newinstall/bash/.inputrc ~/.inputrc
 source ~/.bashrc
 source ~/.inputrc
 
