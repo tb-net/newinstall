@@ -5,7 +5,7 @@ apt remove -y vim-tiny
 apt install -y vim
 rm -f .vim
 
-home=/home/$USER
+home=/home/$1
 dir=$home/scripts/newinstall
 #\cp $dir/vim/.viminfo ~/.viminfo
 \cp $dir/vim/.vimrc ~/.vimrc

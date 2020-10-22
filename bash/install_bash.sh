@@ -2,7 +2,7 @@
 # Install bash config files
 
 apt install bash-completion
-home=/home/$USER
+home=/home/$1
 dir=$home/scripts/newinstall
 mkdir $home/.bak
 [ -f $home/.bashrc ] && mv $home/.bashrc $home/.bak/.bashrc.bak
