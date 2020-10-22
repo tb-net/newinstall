@@ -7,8 +7,8 @@ rm -f .vim
 
 dir=$(pwd)
 echo $dir
-#\cp .viminfo ~.viminfo
-\cp .vimrc ~.vimrc
+#\cp ~/scripts/newinstall/vim/.viminfo ~.viminfo
+\cp ~/scripts/newinstall/vim/.vimrc ~.vimrc
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
 

@@ -2,6 +2,6 @@
 # Make keyboard changes - for local install not remote
 # overwrites any existing configuration!
 
-\cp .Xmodmap ~
+\cp ~/scripts/newinstall/keyboard/.Xmodmap ~/.Xmodmap
 xmodmap ~/.Xmodmap
 
