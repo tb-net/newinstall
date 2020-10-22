@@ -3,11 +3,5 @@
 # overwrites any existing configuration!
 
 \cp .Xmodmap ~
-xmodmap ~/.Xmodmap# overwrites any existing configuration!
-
-\cp .Xmodmap ~
-xmodmap ~/.Xmodmap# overwrites any existing configuration!
-
-\cp .Xmodmap ~
 xmodmap ~/.Xmodmap
 
