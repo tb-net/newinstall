@@ -9,7 +9,6 @@ echo '# my parameters' >> /etc/sudoers
 echo 'scout ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 chown scout:scout install_remote.sh
 cp install_remote.sh /home/scout/install_remote.sh
-cd /home/scout
-su scout >/dev/null
+su scout
 
 

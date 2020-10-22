@@ -3,9 +3,9 @@
 
 apt install bash-completion
 mkdir ~/.bak
-[ -f ~/.bashrc ] && mv ~/.bak/.bashrc.bak
-[ -f ~/.bash_aliases ] && mv ~/.bak/.bash_aliases.bak
-[ -f ~/.inputrc ] && mv ~/.bak/.inputrc.bak
+[ -f ~/.bashrc ] && mv ~.bashrc ~/.bak/.bashrc.bak
+[ -f ~/.bash_aliases ] && mv ~.bash_aliases ~/.bak/.bash_aliases.bak
+[ -f ~/.inputrc ] && mv ~/inputrc .bak/.inputrc.bak
 
 cp .bashrc ~/.bashrc
 cp .bash_aliases ~/.bash_aliases
