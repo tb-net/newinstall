@@ -20,3 +20,5 @@
 `git add myfile`\
 `git commit -m "mycomment"`\
 `git push -u origin master`
+* inc deletions\
+`git commit -a -m . && git push`
