@@ -1,3 +1,3 @@
-# github.com/tb.net
+# github.com/tb-net
 
 test line

@@ -149,11 +149,10 @@ ex ()
  if [ -f ~/.bash_aliases ]; then
      . ~/.bash_aliases
  fi
-#set -o vi
 bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
 export EDITOR=vim
 
-
-
+# Vim bindings are set in .inputrc
+#set -o vi
 

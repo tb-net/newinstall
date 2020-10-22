@@ -3,13 +3,14 @@
 
 import os
 from cryptography.fernet import Fernet
+from mylibrary import file_list
 
 word = '# github.com/tb-net'
 ignorelist = ['encode.py','decode.py']
 
 key_path = str(os.getenv('HOME')) + '/scripts/.cred_encode'
 with open(key_path,'r') as f: key = Fernet(f.read())
-F = os.listdir(os.getcwd())
+F = file_list(r=True) 
 F = [x for x in F if x[-2:]=='py' and x not in ignorelist]
 
 for f in F:
