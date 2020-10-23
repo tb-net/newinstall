@@ -26,14 +26,4 @@ make altinstall
 cd /usr/local/stow/
 stow python$pyshort
 python3.9 -m pip install --upgrade pip
-pip3.9 install virtualenv virtualenvwrapper
-mkdir .virtualenvs
-echo "# Virtualenv settings" >> /home/$usr/.bashrc
-echo "WORKON_HOME=$HOME/.virtualenvs" >> /home/$usr/.bashrc
-echo "VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python$pyshort" >> /home/$usr/.bashrc
-echo "source /home/$usr/.local/bin/virtualenvwrapper.sh" >> /home/$usr/.bashrc
-source /home/$usr/.bashrc
-sudo -u $usr mkvirtualenv $envname
-workon $envname
-pip install requests
 

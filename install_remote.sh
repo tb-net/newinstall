@@ -25,4 +25,5 @@ cd newinstall
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
 ./python/install_python.sh
+#./python/install_virtualenv.sh $usr
 
