@@ -21,4 +21,5 @@ apt install -y libffi-dev
 apt install -y python3-dev
 apt install -y python3-setuptools
 apt install -y wget
+apt install -y stow
 

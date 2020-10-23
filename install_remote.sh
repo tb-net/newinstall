@@ -24,4 +24,5 @@ cd newinstall
 ./install_update.sh $usr
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
+./python/install_python.sh
 
