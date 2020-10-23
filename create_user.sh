@@ -1,16 +1,14 @@
 # github.com/tb-net
-
 # as root
-groupadd scout
-scoutpwd=$(cat /root/.cred_scout)
-useradd -u 1001 -g scout -d /home/scout -s /bin/bash -p $(echo $scoutpwd | openssl passwd -1 stdin) -m scout
-usermod -aG sudo scout
-echo '# my parameters' >> /etc/sudoers
-echo 'scout ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-chown scout:scout install_remote.sh
-cp install_remote.sh /home/scout/install_remote.sh
-cd /home/scout
-sudo -u scout ./install_remote.sh
-su scout >/dev/null
 
+usr=$1
+groupadd $usr
+upwd=$(cat /root/.cred_remote)
+useradd -u 1001 -g $usr -d /home/$usr -s /bin/bash -p $(echo $upwd | openssl passwd -1 stdin) -m $usr 
+usermod -aG sudo $usr 
+echo "# my parameters" >> /etc/sudoers
+echo "$usr ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+./install_remote.sh $usr 
+chown -R $usr:$usr /home/$usr
+cd /home/$usr
 
