@@ -23,7 +23,7 @@ cd /opt/python_new
 wget 'https://www.python.org/ftp/python/'$pyver'/Python-'$pyver'.tar.xz'
 tar xvf 'Python-'$pyver'.tar.xz'
 cd 'Python-'$pyver
-.configure --enable-optimizations
+./configure --enable-optimizations
 make -j 1
 make altinstall
 
