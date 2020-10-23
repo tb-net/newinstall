@@ -1,7 +1,17 @@
 # github.com/tb-net
-
 # as root
+
 usr=$1
+
+# creation
+groupadd $usr
+upwd=$(cat /root/.cred_remote)
+useradd -u 1001 -g $usr -d /home/$usr -s /bin/bash -p $(echo $upwd | openssl passwd -1 stdin) -m $usr
+usermod -aG sudo $usr
+echo "# my parameters" >> /etc/sudoers
+echo "$usr ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
+# installation
 cd /home/$usr
 mkdir scripts
 cd scripts
