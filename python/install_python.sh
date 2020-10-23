@@ -16,14 +16,13 @@ else
 fi
 
 # prepare
-dir='/opt/python'$pyver
-mkdir $dir
-cd $dir
+mkdir /opt/python_new
+cd /opt/python_new
 
 # download and install
 wget 'https://www.python.org/ftp/python/'$pyver'/Python-'$pyver'.tar.xz'
 tar xvf 'Python-'$pyver'.tar.xz'
-cd dir'/python'$pyver
+cd 'Python-'$pyver
 .configure --enable-optimizations
 make -j 1
 make altinstall
