@@ -17,9 +17,8 @@ fi
 
 # prepare
 dir='/opt/python'$pyver
-echo $dir
-#mkdir $dir
-#cd $dir
+mkdir $dir
+cd $dir
 
 # download and install
 wget 'https://www.python.org/ftp/python/'$pyver'/Python-'$pyver'.tar.xz'
@@ -28,3 +27,4 @@ cd dir'/python'$pyver
 .configure --enable-optimizations
 make -j 1
 make altinstall
+

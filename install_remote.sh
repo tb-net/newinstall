@@ -1,5 +1,6 @@
 # github.com/tb-net
-# as root
+# Enter name of user as first argument
+# Run as root
 
 usr=$1
 
