@@ -13,5 +13,5 @@ rm -f $home/.vim
 \cp $dir/vim/.vimrc $home/.vimrc
 curl -fLo $home/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 chown -R $usr:$usr $home
-sudo -u $usr vim +PlugInstall +qall || true
+echo | sudo -u $usr vim +PlugInstall +qall
 
