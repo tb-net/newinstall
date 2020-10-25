@@ -22,4 +22,13 @@ apt install -y python3-dev
 apt install -y python3-setuptools
 apt install -y wget
 apt install -y stow
+apt install -y poppler-utils
+apt install -y libpoppler-cpp-dev
+apt install -y gfortran libopenblas-dev liblapack-dev
+apt install -y curl
+apt install -y links htop expect
+apt install -y unzip
+apt install -y chromium-browser
+apt isntall -y chromium-chromedriver
+apt install -y cpu
 
