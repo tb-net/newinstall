@@ -3,6 +3,7 @@
 
 pip install ipython
 pip install arrow
+pip install fernet
 pip install beautifullsoup4 selenium
 pip install pdftotest openpyxl xlrd
 pip install numpy pandas scipy
