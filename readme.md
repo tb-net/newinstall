@@ -4,8 +4,7 @@ Collection of scripts for new installations of ubuntu on local or remote machine
 
 ## copy essential files over
 `scp ~/scripts/.cred_remote root@ipaddress:/root`
-`scp ~/scripts/newinstall/create_user.sh root@ipaddress:/root`
-`scp ~/scripts/newinstall/install_remote.sh root@ipaddress:/root`
+`scp ~/scripts/newinstall/main/install_remote.sh root@ipaddress:/root`
 
 ## ssh in
 `cd /root`
