@@ -9,8 +9,18 @@ groupadd $usr
 upwd=$(cat /root/.cred_remote)
 useradd -u 1001 -g $usr -d /home/$usr -s /bin/bash -p $(echo $upwd | openssl passwd -1 stdin) -m $usr
 usermod -aG sudo $usr
-echo "# my parameters" >> /etc/sudoers
+echo "# --- my parameters ---" >> /etc/sudoers
 echo "$usr ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
+# security
+apt install -y fail2ban ufw
+systemctl start fail2ban
+systemctl enable fail2ban
+cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
+echo "# --- my parameters ---" >> etc/ssh/sshd_config
+echo "AuthenticationMethods publickey" >> etc/ssh/sshd_config
+echo "PubkeyAuthentication yes" >> etc/ssh/sshd_config
+systemctl restart sshd
 
 # installation
 cd /home/$usr
@@ -22,7 +32,6 @@ git clone https://github.com/tb-net/newinstall.git
 chown -R $usr:$usr /home/$usr
 cd newinstall
 ./main/install_update.sh
-./main/install_update_remote.sh
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
 ./python/install_python.sh $usr

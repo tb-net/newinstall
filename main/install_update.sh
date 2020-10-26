@@ -31,4 +31,6 @@ apt install -y unzip
 apt install -y chromium-browser
 apt isntall -y chromium-chromedriver
 apt install -y cpu
+apt install -y vnstat
+apt install -y ncdu
 
