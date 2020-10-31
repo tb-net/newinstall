@@ -24,6 +24,7 @@ apt install -y wget
 apt install -y stow
 apt install -y poppler-utils
 apt install -y libpoppler-cpp-dev
+apt install -y tesseract-ocr
 apt install -y gfortran libopenblas-dev liblapack-dev
 apt install -y curl
 apt install -y links htop expect
