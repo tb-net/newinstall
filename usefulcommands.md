@@ -15,7 +15,7 @@
 `git init`\
 `git remote add origin git@github.com:tb-net/myproject.git`\
 `ssh -T git@github.com`\
-`git clone git@github.com:tb-net/myproject.get`
+`git clone git@github.com:tb-net/myproject.git`
 * usage\
 `git add myfile`\
 `git commit -m "mycomment"`\
