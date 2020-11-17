@@ -11,6 +11,7 @@ useradd -u 1001 -g $usr -d /home/$usr -s /bin/bash -p $(echo $upwd | openssl pas
 usermod -aG sudo $usr
 echo "# --- my parameters ---" >> /etc/sudoers
 echo "$usr ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+chown $usr:$usr /root/.cred_fernet
 
 # security
 apt install -y fail2ban ufw
