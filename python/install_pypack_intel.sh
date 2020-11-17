@@ -12,4 +12,5 @@ pip install mkl_fft mkl_random
 pip install intel-numpy intel-scipy intel-scikit-learn daal4py tbb4py
 pip install pandas
 pip install matplotlib seaborn
+pip install pyenchant
 

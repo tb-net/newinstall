@@ -34,5 +34,14 @@ cd newinstall
 ./main/install_update.sh
 ./bash/install_bash.sh $usr
 ./vim/install_vim.sh $usr
+./keyboard/install_keyboard.sh
 ./python/install_python.sh $usr
+
+# other directories
+cd /home/$usr/scripts
+mkdir python
+mkdir data
+mkdir files
+cd python
+git clone https://github.com/tb-net/python.git
 

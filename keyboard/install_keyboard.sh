@@ -1,5 +1,5 @@
 # github.com/tb-net
-# Make keyboard changes - for local install not remote
+# Make keyboard changes
 # overwrites any existing configuration!
 
 \cp ~/scripts/newinstall/keyboard/.Xmodmap ~/.Xmodmap
