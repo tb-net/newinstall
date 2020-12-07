@@ -13,7 +13,7 @@ wget https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-1.24
 
 wget https://www.idrix.fr/VeraCrypt/VeraCrypt_PGP_public_key.asc
 
-python verify_veracrypt.py
+python3 verify_veracrypt.py
 
 rm veracrypt*deb*
 rm veracrypt*txt*

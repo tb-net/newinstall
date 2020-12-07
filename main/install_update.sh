@@ -34,5 +34,7 @@ apt install -y chromium-chromedriver
 apt install -y cpu
 apt install -y vnstat
 apt install -y ncdu
+apt install -y gnupg
 apt install -y gnupg2
+apt install -y apt-transport-https
 

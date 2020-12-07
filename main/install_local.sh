@@ -21,10 +21,8 @@ cd newinstall
 
 # other directories
 cd /home/$usr/scripts
-mkdir python
 mkdir data
 mkdir files
-cd python
 git clone https://github.com/tb-net/python.git
 
 
