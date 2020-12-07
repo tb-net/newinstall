@@ -11,10 +11,11 @@ wget https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-1.24
 
 wget https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-1.24-Update7-sha512sum.txt.sig
 
-gpg --recv-keys 0x680D16DE
+wget https://www.idrix.fr/VeraCrypt/VeraCrypt_PGP_public_key.asc
 
 python verify_veracrypt.py
 
 rm veracrypt*deb*
 rm veracrypt*txt*
+rm Veracrypt*asc
 

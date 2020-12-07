@@ -6,9 +6,7 @@
 usr=$1
 
 # installation
-cd /home/$usr
-mkdir applications
-cd applications
+cd /home/$usr/scripts/newinstall/applications
 ./install_brave.sh
 ./install_discord.sh
 ./install_opera.sh

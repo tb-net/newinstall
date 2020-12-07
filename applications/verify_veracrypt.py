@@ -9,11 +9,17 @@ sig_file = 'veracrypt-1.24-Update7-sha512sum.txt'
 ct = 0
 
 # get fingerprint from key
-cmd = 'gpg --fingerprint 0x680D16DE'
+#cmd = 'gpg --fingerprint 0x680D16DE'
+#s = subprocess.check_output(cmd, shell=True)
+#s = s.decode('utf-8').split('\n')[1]
+#s = s.strip().replace(' ','') 
+#f_veracrypt = s
+
+# get fingerprint from asc file
+cmd = 'gpg VeraCrypt_PGP_public_key.asc 2>/dev/null'
 s = subprocess.check_output(cmd, shell=True)
 s = s.decode('utf-8').split('\n')[1]
-s = s.strip().replace(' ','') 
-f_veracrypt = s
+f_veracrypt = s.strip()
 
 print('Veracrypt verification ...')
 
