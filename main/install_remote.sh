@@ -1,3 +1,4 @@
+#!/bin/bash
 # github.com/tb-net
 # Enter name of user as first argument
 # Run as root

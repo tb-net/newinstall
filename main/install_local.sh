@@ -1,3 +1,4 @@
+#!/bin/bash
 # github.com/tb-net
 # For local install, user is already created 
 # Run with sudo

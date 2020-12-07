@@ -1,3 +1,4 @@
+#!/bin/bash
 # github.com/tb-net
 # Run with sudo
 

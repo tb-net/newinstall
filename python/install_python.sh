@@ -1,3 +1,4 @@
+#!/bin/bash
 # github.com/tb-net
 # Install the latest version of python in a virtual environment
 

@@ -1,3 +1,5 @@
+#!/bin/bash
+# github.com/tb-net
 # Bash script to make a new vim installation
 # overwrites any existing configuration!
 

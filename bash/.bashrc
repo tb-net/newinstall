@@ -1,3 +1,5 @@
+# github.com/tb-net
+
 #
 # ~/.bashrc
 #

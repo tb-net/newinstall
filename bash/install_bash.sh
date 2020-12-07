@@ -1,3 +1,4 @@
+#!/bin/bash
 # github.com/tb-net
 # Install bash config files
 

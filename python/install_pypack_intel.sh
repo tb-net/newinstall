@@ -1,3 +1,4 @@
+#!/bin/bash
 # github.com/tb-net
 # Install python packages, with intel versions where applicable
 # Make sure virtualenv is activated
