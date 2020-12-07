@@ -25,26 +25,8 @@ mkdir data
 mkdir files
 cd python
 git clone https://github.com/tb-net/python.git
-cd /home/$usr
-mkdir applications
 
 
 # software
-cd applications
-./install_brave.sh
-./install_discord.sh
-./install_opera.sh
-./install_signal.sh
-./install_surfshark.sh
-./install_vivaldi.sh
-./install_virtualbox.sh
-
-apt update
-apt install -y brave-browser
-apt install -y opera-stable
-apt install -y signal-desktop
-apt install -y surfshark-vpn
-apt install -y vivaldi-stable
-
-./install_veracrypt.sh
-
+cd /home/$usr/scripts/newinstall
+#./main/install_apps.sh

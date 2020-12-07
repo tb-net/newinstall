@@ -29,11 +29,9 @@ apt install -y gfortran libopenblas-dev liblapack-dev
 apt install -y curl
 apt install -y links htop expect
 apt install -y unzip
-apt install -y chromium-browser
-apt isntall -y chromium-chromedriver
+apt install -y chromium-chromedriver
 apt install -y cpu
 apt install -y vnstat
 apt install -y ncdu
 apt install -y gnupg2
-apt install -y expect
 
