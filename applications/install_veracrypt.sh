@@ -17,5 +17,5 @@ python3 verify_veracrypt.py
 
 rm veracrypt*deb*
 rm veracrypt*txt*
-rm Veracrypt*asc
+rm VeraCrypt*asc
 
