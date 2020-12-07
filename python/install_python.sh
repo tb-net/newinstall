@@ -5,6 +5,7 @@
 pyver="3.9.0"
 
 usr=$1
+ncore=$2
 pyshort=${pyver:0:3}
 
 # prepare
@@ -17,7 +18,7 @@ rm "Python-"$pyver".tar.xz"
 cd "Python-"$pyver
 #./configure --enable-optimizations --prefix=/usr/local/stow/python$pyshort
 ./configure --prefix=/usr/local/stow/python$pyshort
-make -j 1
+make -j $ncore
 make altinstall
 cd /usr/local/stow/
 stow python$pyshort
