@@ -28,4 +28,4 @@ git clone https://github.com/tb-net/python.git
 
 # software
 cd /home/$usr/scripts/newinstall
-#./main/install_apps.sh
+./main/install_apps.sh $usr

@@ -17,11 +17,11 @@ cd /home/$usr/scripts/newinstall/applications
 ./install_virtualbox.sh $usr
 
 apt update
-apt install -y --force-yes brave-browser
-apt install -y --force-yes opera-stable
-apt install -y --force-yes signal-desktop
-apt install -y --force-yes surfshark-vpn
-apt install -y --force-yes vivaldi-stable
+apt install -y brave-browser
+y | apt install -y opera-stable
+apt install -y signal-desktop
+apt install -y surfshark-vpn
+apt install -y vivaldi-stable
 
 ./install_veracrypt.sh
 
