@@ -33,7 +33,9 @@ try:
     f_webpage = t[s1+12:s2]
     if f_webpage==f_veracrypt:
         ct=ct+1
-        print('Success - fingerprint from key matches web page')
+        print('Success - fingerprint from key matches web page ... importing')
+        cmd = 'gpg --import VeraCrypt_PGP_public_key.asc'
+        subprocess.call(cmd, shell=True)
     else:
         print('Failure - fingerprint from key does NOT match web page')
 except:

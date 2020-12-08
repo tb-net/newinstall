@@ -18,7 +18,7 @@ wget https://download.virtualbox.org/virtualbox/6.1.16/Oracle_VM_VirtualBox_Exte
 
 echo "y" | sudo VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack
 
-rm Oracle_VM_VirtualBox_Extension_Pack-6.0.0.vbox-extpack
+rm Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack
 
 mkdir /home/$usr/Downloads/iso
 
