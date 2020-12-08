@@ -18,10 +18,10 @@ cd /home/$usr/scripts/newinstall/applications
 
 apt update
 apt install -y brave-browser
-y | apt install -y opera-stable
 apt install -y signal-desktop
 apt install -y surfshark-vpn
 apt install -y vivaldi-stable
+echo -e '\r' | apt install -y opera-stable
 
 ./install_veracrypt.sh
 
