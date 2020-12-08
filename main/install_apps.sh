@@ -28,7 +28,7 @@ apt install -y vivaldi-stable
 apt install -y kate
 snap install slack --classic
 
-echo -e '\r' | apt install -y opera-stable
+echo -e '\n' | apt install -y opera-stable
 
 ./install_veracrypt.sh
 

@@ -8,6 +8,7 @@ apt autoremove
 
 apt install -y build-essential
 apt install -y checkinstall
+apt install -y liblzma-dev
 apt install -y libreadline-gplv2-dev
 apt install -y libncursesw5-dev
 apt install -y libssl-dev
