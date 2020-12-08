@@ -17,7 +17,7 @@ cd /home/$usr/scripts/newinstall/applications
 ./install_virtualbox.sh $usr
 ./install_calibre.sh
 su -c ./install_tresorit.sh $usr
-su -c ./install_joplin.sh $usr
+#su -c ./install_joplin.sh $usr
 ./install_nextcloud.sh $usr
 
 apt update
