@@ -39,7 +39,7 @@ try:
     else:
         print('Failure - fingerprint from key does NOT match web page')
 except:
-    print('Failure - unable to retreive ginerprint from web page')
+    print('Failure - unable to retreive fingerprint from web page')
 
 # verify deb file signature
 cmd = 'gpg --verify ' + deb_file + '.sig ' + deb_file + ' 2>&1'
@@ -76,9 +76,7 @@ if checksum_deb==checksum_file:
 else:
     print('Failure - .deb checksum does not match')
 
-print(checksum_deb)
-print(checksum_file)
-
+# final
 if ct==4:
     print('All checks passed... installing')
     cmd = 'apt install -y ./' + deb_file

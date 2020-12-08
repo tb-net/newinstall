@@ -15,12 +15,19 @@ cd /home/$usr/scripts/newinstall/applications
 ./install_vivaldi.sh
 ./install_chrome.sh
 ./install_virtualbox.sh $usr
+./install_calibre.sh
+./install_tresorit.sh
+./install_joplin.sh
+./install_nextcloud.sh $usr
 
 apt update
 apt install -y brave-browser
 apt install -y signal-desktop
 apt install -y surfshark-vpn
 apt install -y vivaldi-stable
+apt install -y kate
+snap install slack --classic
+
 echo -e '\r' | apt install -y opera-stable
 
 ./install_veracrypt.sh
