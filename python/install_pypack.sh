@@ -12,4 +12,5 @@ pip install pytesseract
 pip install numpy pandas scipy scikit-learn
 pip install matplotlib seaborn
 pip install pyenchant
-
+pip install asyncio
+pip install aiohttp

@@ -14,4 +14,6 @@ pip install intel-numpy intel-scipy intel-scikit-learn daal4py tbb4py
 pip install pandas
 pip install matplotlib seaborn
 pip install pyenchant
+pip install asyncio
+pip install aiohttp
 
